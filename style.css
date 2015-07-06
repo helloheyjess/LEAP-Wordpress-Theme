@@ -72,6 +72,11 @@ summary {
 	display: block;
 }
 
+figcaption {
+	background: #eee;
+	padding: 10px;
+}
+
 audio,
 canvas,
 progress,
@@ -274,9 +279,9 @@ input,
 select,
 textarea {
 	color: #222;
-	font-size: 1em;
+	font-size: 1.1em;
 	line-height: 1.5;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Bree Serif', serif;
 
 }
 
@@ -289,8 +294,8 @@ h6 {
 	clear: both;
 }
 
-h1, h2 {
-	font-family: 'Roboto Slab', serif;
+h1, h2, h3, h4 {
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -306,6 +311,7 @@ h3 {
 	color: #00AEEF;
 	font-size: 1.2em;
 	text-transform: uppercase;
+
 }
 
 h4 {
@@ -522,6 +528,7 @@ table {
 .site-footer h3 {
 	color: #222;
 	margin: 0;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .site-footer p {
@@ -784,15 +791,16 @@ a:active {
 	height: 115px;
 }
 
-ul.nav-menu {
+#primary-menu {
 	float: left;
 	width: 65%;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
 }
 
-ul.nav-menu li {
+.menu-item {
 	float: left;
 	background: rgba(0,174,239, 0.9);
 	width: 25%;
@@ -803,53 +811,50 @@ ul.nav-menu li {
 	height: 115px;
 }
 
-ul.nav-menu li:hover ul.sub-menu li {
+.menu-item:hover .sub-menu li {
 	display: block;
 }
 
-ul.nav-menu li a {
+.menu-item a {
 	text-decoration: none;
 	color: #fff;
 	font-weight: 400;
 	text-transform: uppercase;
 	display: block;
 	padding: 46px 0;
+	font-size: 0.8em;
 }
 
-ul.nav-menu li:hover {
+.menu-item:hover {
 	background: rgba(6,83,131, 0.9);
 }
 
-ul.nav-menu .current-menu-item {
-	background: rgba(6,83,131, 0.7);
-}
-
-ul.sub-menu {
+.sub-menu {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	position: absolute;
 	width: 100%;
-	top: 100%;
+	top: 100%;	
 	left: 0;
 	z-index: 99999;
 	background: rgba(0,174,239, 0.9);
 	transition: all 0.25s;
 }
 
-ul.sub-menu li {
+.sub-menu li {
 	display: none;
 	width: 100%;
 	border-top: 1px dotted #1F2F63;
 	transition: all 0.25s;
-	height: 65px;
+	height: 60px;
 }
 
-ul.sub-menu li:first-child {
+.sub-menu li:first-child {
 	border: none;
 }
 
-ul.sub-menu li a {
+.sub-menu li a {
 	padding: 20px 0;
 }
 
@@ -884,7 +889,7 @@ ul.sub-menu li a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	/*display: block;*/
+	display: none;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -916,6 +921,10 @@ ul.sub-menu li a {
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+.form-allowed-tags {
+	display: none;
 }
 
 /*--------------------------------------------------------------
@@ -1119,10 +1128,14 @@ object {
 
 .wp-caption-text {
 	text-align: center;
+	font-size: 0.7em;
+	color: #444;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
 }
 
 .wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
+	margin: 0;
 }
 
 /*--------------------------------------------------------------

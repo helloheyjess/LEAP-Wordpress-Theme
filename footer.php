@@ -23,10 +23,10 @@
 					250 The Esplanade, Suite 500<br>
 					Toronto, ON M5A 1J2<br>
 					555-555-5555<br>
-					<a href="#">info@leaptransition.ca</a>
+					<a href="mailto:info@leaptransition.ca">info@leaptransition.ca</a>
 				</div>
 				<h3>Follow us on Twitter:</h3>
-				<p><a href="#"><i class="fa fa-twitter fa-2x"></i>@leaptransition</a></p>
+				<p><a href="http://www.twitter.com/leaptransition"><i class="fa fa-twitter fa-2x"></i>@leaptransition</a></p>
 				<p><a href="https://twitter.com/search?q=%23athletedancertransitions">#athletedancertransitions</a></p>
 				
 			</div>

@@ -590,7 +590,7 @@ input::-webkit-input-placeholder {
 /*Page Layout Styles*/
 
 .page .entry-header {
-	background: rgba(0,174,239, 0.9);
+	background: #00AEEF;
 	color: #fff;
 	padding: 20px 40px;
 	position: absolute;
@@ -618,7 +618,7 @@ input::-webkit-input-placeholder {
 /*Post Layout Styles*/
 
 .blog .blog-entry-header {
-	background: rgba(0,174,239, 0.9);
+	background: #00AEEF;
 	color: #fff;
 	padding: 20px 40px;
 	position: absolute;
